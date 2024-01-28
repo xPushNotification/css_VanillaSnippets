@@ -1,0 +1,39 @@
+
+
+css трансформации:
+------------------
+
+rotate(x)               Defines a transformation that moves the element around a fixed point on the Z axis
+translate(x,y)          Moves the position of the element on the X and Y axis
+translateX(x)           Moves the position of the element on the X axis
+translateY(y)           Moves the position of the element on the Y axis
+scale(x,y)              Modifies the size of the element on the X and Y axis
+scaleX(x)               Modifies the size of the element on the X axis
+scaleY(y)               Modifies the size of the element on the Y axis
+skew(x,y)               Distorting each point of an element by a certain angle in
+each direction
+skewX(x)                Horizontal shear mapping distorting each point of an element by a certain angle in the
+horizontal direction
+skewY(y)                Vertical shear mapping distorting each point of an element by a certain angle in the vertical
+direction
+
+-- последовательные шаги
+transform: rotate(15deg) translateX(200px);
+transform-origin: 100% 50%;
+
+.rotate {
+ width: 100px;
+ height: 100px;
+ background: teal;
+ transform: rotate(45deg);
+}
+
+
+.skew {
+ width: 100px;
+ height: 100px;
+ background: teal;
+ transform: skew(20deg, -30deg);
+}
+
+

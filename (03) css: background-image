@@ -1,0 +1,35 @@
+
+
+css: background-image:
+----------------------
+
+background: no-repeat center url("somepng.jpg");
+background: #000000 url("picture.png") top left / 600px auto no-repeat;
+
+background-size: 50px;
+background-size: 50px auto; /* same as above */
+background-size: auto 50px;
+background-size: 50px 50px;
+
+background-position: 50% 50%;
+
+div > div {
+ background-image: url(http://i.stack.imgur.com/r5CAq.jpg);
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-color: #ccc;
+ border: 1px solid;
+ width: 20em;
+ height: 10em;
+}
+div.contain {
+ background-size: contain;
+}
+div.cover {
+ background-size: cover;
+}
+
+div {
+ background-image: url("img.jpg");
+ background-repeat: repeat-y;
+}

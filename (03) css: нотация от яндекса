@@ -1,0 +1,26 @@
+
+
+нотация от яндекса:
+-------------------
+
+Blocks: standalone entities that are meaningful on their own
+Examples are header, container, menu, checkbox & textbox
+
+Elements: Part of blocks that have no standalone meaning and are semantically tied to their blocks.
+Examples are menu item, list item, checkbox caption & header title
+
+Modifiers: Flags on a block or element, used to change appearance or behavior
+Examples are disabled, highlighted, checked, fixed, size big & color yellow
+
+.form { } // Block
+.form--theme-xmas { } // Block + modifier
+.form--simple { } // Block + modifier
+.form__input { } // Block > element
+.form__submit { } // Block > element
+.form__submit--disabled { } // Block > element + modifier
+
+<form class="form form--theme-xmas form--simple">
+ <input class="form__input" type="text" />
+ <input class="form__submit form__submit--disabled" type="submit" />
+</form>
+

@@ -1,0 +1,8 @@
+
+
+js в ссылке:
+------------
+
+<a href="javascript:myFunction();">Run Code</a>
+<a href="#" onclick="myFunction(); return false;">Run Code</a>
+<a href="#!" onclick="myFunction();">Run Code</a>

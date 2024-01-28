@@ -1,0 +1,32 @@
+
+
+медиа квери:
+------------
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+ and (min-width: 1200px)
+ and (max-width: 1600px)
+ and (-webkit-min-device-pixel-ratio: 1) {
+}
+/* ----------- Retina Screens ----------- */
+@media screen
+ and (min-width: 1200px)
+ and (max-width: 1600px)
+ and (-webkit-min-device-pixel-ratio: 2)
+ and (min-resolution: 192dpi) {
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+ .site-title {
+ font-size: 80%;
+ }
+ /* Styles in this block are only applied if the screen size is atleast 300px wide, but no more
+than 767px */
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+ .site-title {
+ font-size: 90%;
+ }

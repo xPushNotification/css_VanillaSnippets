@@ -1,0 +1,7 @@
+
+
+подпись к инпутам:
+------------------
+
+<input id="cats" type="checkbox" name="Cats">
+<label for="cats" >I like Cats!</label>

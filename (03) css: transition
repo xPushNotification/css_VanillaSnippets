@@ -1,0 +1,43 @@
+
+
+css transition:
+---------------
+
+transition-property
+transition-duration
+transition-timing-function
+transition-delay
+
+linear: cubic-bezier(0,0,1,1)
+ease-in: cubic-bezier(0.42, 0.0, 1.0, 1.0)
+ease-out: cubic-bezier(0.0, 0.0, 0.58, 1.0)
+ease-in-out: cubic-bezier(0.42, 0.0, 0.58, 1.0)
+
+
+div{
+ width: 150px;
+ height:150px;
+ background-color: red;
+ transition: background-color 1s;
+ transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+div:hover{
+ background-color: green;
+}
+
+div {
+ height: 100px;
+ width: 100px;
+ border: 1px solid;
+ transition-property: height, width;
+ transition-duration: 1s, 500ms;
+ transition-timing-function: linear;
+ transition-delay: 0s, 1s;
+}
+div:hover {
+ height: 200px;
+ width: 200px;
+}
+
+
+

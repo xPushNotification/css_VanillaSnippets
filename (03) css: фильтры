@@ -1,0 +1,10 @@
+
+
+css фильтры:
+------------
+
+filter: blur(1px);
+filter: drop-shadow(10px 10px 1px green);
+filter: hue-rotate(120deg);
+filter: brightness(200%) grayscale(100%) sepia(100%) invert(100%);
+filter: invert(100%);

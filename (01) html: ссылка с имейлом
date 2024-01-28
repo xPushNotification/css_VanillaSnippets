@@ -1,0 +1,8 @@
+
+
+ссылка с имейлом:
+-----------------
+
+<a href="mailto:example@example.com">Send email</a>
+<a href="mailto:example@example.com?cc=john@example.com&bcc=jane@example.com">Send email</a>
+<a href="mailto:example@example.com?subject=Example+subject&body=Message+text">Send email</a>

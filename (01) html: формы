@@ -1,0 +1,15 @@
+
+
+формы:
+------
+
+<form action="action.php" method="post" target="_blank" accept-charset="UTF-8"
+enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+</form>
+
+<form method="post" enctype="multipart/form-data" action="upload.php">
+ <input type="file" name="pic" />
+ <input type="submit" value="Upload" />
+</form>
+
+

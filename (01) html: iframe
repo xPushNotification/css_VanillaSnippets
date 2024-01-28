@@ -1,0 +1,9 @@
+
+
+ифрейм:
+-------
+
+<iframe sandbox src="http://example.com/"></iframe>
+
+<iframe src="base.html" width="800" height="600"></iframe>
+

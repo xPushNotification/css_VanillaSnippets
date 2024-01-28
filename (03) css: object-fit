@@ -1,0 +1,10 @@
+
+
+object fit:
+-----------
+
+object-fit:fill;
+object-fit:contain;
+object-fit:cover;
+object-fit:none;
+object-fit:scale-down;

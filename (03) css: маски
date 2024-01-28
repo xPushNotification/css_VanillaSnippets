@@ -1,0 +1,65 @@
+
+
+css маски на картинку:
+----------------------
+
+Simple mask that fades an image from solid to transparent
+
+div {
+ height: 200px;
+ width: 200px;
+ background: url(http://lorempixel.com/200/200/nature/1);
+ mask-image: linear-gradient(to right, white, transparent);
+}
+
+---------------
+Clipping (Circle)
+
+div{
+width: 200px;
+ height: 200px;
+ background: teal;
+ clip-path: circle(30% at 50% 50%); /* refer remarks before usage */
+}
+
+---------------
+Clipping (Polygon)
+
+div{
+ width:200px;
+ height:200px;
+ background:teal;
+ clip-path: polygon(0 0, 0 100%, 100% 50%); /* refer remarks before usage */
+}
+
+---------------
+Using masks to cut a hole in the middle of an image
+
+div {
+ width: 200px;
+ height: 200px;
+ background: url(http://lorempixel.com/200/200/abstract/6);
+ mask-image: radial-gradient(circle farthest-side at center, transparent 49%, white 50%); /* check
+remarks before using */
+}
+
+
+---------------
+Using masks to create images with irregular shapes
+
+div { /* check remarks before usage */
+ height: 200px;
+ width: 400px;
+ background-image: url(http://lorempixel.com/400/200/nature/4);
+ mask-image: linear-gradient(to top right, transparent 49.5%, white 50.5%), linear-gradient(to top
+left, transparent 49.5%, white 50.5%), linear-gradient(white, white);
+ mask-size: 75% 25%, 25% 25%, 100% 75%;
+ mask-position: bottom left, bottom right, top left;
+ mask-repeat: no-repeat;
+}
+
+
+
+
+
+

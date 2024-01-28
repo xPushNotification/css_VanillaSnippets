@@ -1,0 +1,109 @@
+
+
+инпуты:
+-------
+
+<input type="text" size="50">
+
+группа по name:
+<input type="radio" name="color" id="red" value="#F00">
+<input type="radio" name="color" id="green" value="#0F0">
+<input type="radio" name="color" id="blue" value="#00F">
+
+<input checked>
+<input checked="">
+<input checked="checked">
+<input checked="ChEcKeD">
+
+<fieldset>
+ <legend>Theme color:</legend>
+ <p>
+ <input type="radio" name="color" id="red" value="#F00">
+ <label for="red">Red</label>
+ </p>
+</fieldset>
+
+<input minlength="3" maxlength="15">
+
+Marks: <input type="number" size="6" name="marks" min="0" max="100" />
+Subject Feedback: <input type="range" size="2" name="feedback" min="1" max="5" />
+
+<input pattern="\d*" title="Numbers only, please.">
+
+<input type="file" accept="image/*" title="Only images are allowed">
+<input type="file" accept="image/*,.rar,application/zip">
+
+<form>
+ <input type="text" name="name" required>
+ <input type="email" name="email" required>
+ <input pattern="\d*" name="number" required>
+ <input type="submit" value="Publish"> <!-- form will be validated -->
+ <input type="submit" value="Save" formnovalidate> <!-- form will NOT be validated -->
+</form>
+
+<input type="color" name="favcolor" value="#ff0000">
+
+<input type="password" name="password" placeholder="Password">
+
+<form action="upload_file.php" method="post" enctype="multipart/form-data">
+ Select file to upload:
+ <input type="file" name="fileSubmission" id="fileSubmission">
+ <input type="submit" value="Upload your file" name="submit">
+</form>
+
+<input type="button" onclick="alert('hello world!')" value="Click Me">
+
+<input type="submit" value="Submit">
+
+<input type="reset" value="Reset">
+
+<input type="hidden" name="inputName" value="inputValue">
+
+<input type="tel" value="+8400000000">
+
+<form>
+ <label>E-mail: <label>
+ <input type="email" name="email">
+</form>
+
+<input type="number" value="0" name="quantity">
+
+<input type="range" min="" max="" step="" />
+
+<input type="image" src="img.png" alt="image_name" height="50px" width="50px"/>
+
+<input type="datetime-local" />
+
+<input type="time" />
+<input type="date" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

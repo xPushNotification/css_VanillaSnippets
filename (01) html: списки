@@ -1,0 +1,35 @@
+
+
+списки:
+-------
+
+<ol start="3">
+ <li>Item</li>
+ <li>Some Other Item</li>
+ <li>Yet Another Item</li>
+ <li value="7"></li>
+</ol>
+
+<ol reversed>
+ <li>Item</li>
+ <li>Some Other Item</li>
+ <li value="4">A Reset Item</li>
+ <li>Another Item</li>
+ <li>Yet Another Item</li>
+</ol>
+
+<ul>
+ <li>Item</li>
+ <li>Another Item</li>
+ <li>Yet Another Item</li>
+</ul>
+
+<dl>
+ <dt>name 1</dt>
+ <dd>value for 1</dd>
+ <dt>name 2</dt>
+ <dd>value for 2</dd>
+</dl>
+
+
+

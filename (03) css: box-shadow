@@ -1,0 +1,19 @@
+
+
+box shadow:
+-----------
+
+только низ:
+box-shadow: 0px 0px 8px 2px #444444;
+
+box-shadow: 0px 0px 10px -1px #444444;
+
+внутренняя тень:
+box-shadow: inset 0px 0px 10px 0px #444444;
+
+несколько (как лучи от элемента по 25%):
+box-shadow:
+ -52px -52px 0px 0px #f65314,
+ 52px -52px 0px 0px #7cbb00,
+ -52px 52px 0px 0px #00a1f1,
+ 52px 52px 0px 0px #ffbb00;

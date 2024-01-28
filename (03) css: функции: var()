@@ -1,0 +1,13 @@
+
+
+css доступ к переменной var:
+----------------------------
+
+/* set a variable */
+:root {
+  --primary-color: blue;
+}
+/* access variable */
+selector {
+ color: var(--primary-color);
+}

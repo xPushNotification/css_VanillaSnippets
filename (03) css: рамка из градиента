@@ -1,0 +1,10 @@
+
+
+css градиентная рамка:
+----------------------
+
+.bordered {
+ border-image: linear-gradient(to right, red 20%, green 20%, green 40%, blue 40%, blue 60%, maroon
+60%, maroon 80%, chocolate 80%); /* gradient with required colors */
+ border-image-slice: 1;
+}

@@ -1,0 +1,99 @@
+
+
+Селекторы:
+----------
+
+пседоэлементы:
+    a
+    h1
+    head
+
+прямые:
+    класс:                                  .red
+    id:                                     #red
+    с классом и с классом (нет пробела):    .red.dark
+
+комбинации:
+    внутри класса классы (с пробелом):      .red .dark
+    все наследники:                         .red *
+    прямые наследники:                      .red > .dark
+    все элементы и все элементы:            .red, .green
+
+    сразу следующий элемент (один):         .red + a
+    элемент сразу за классом:               .red ~ a
+
+маска для селектора:                        div[class*='col']
+(выберет col-1, col-2 и тд.)
+
+псевдо селекторы:
+    :first-letter
+    :first-child
+    :last-child
+    :nth-child(89)
+    :nth-child(odd)
+    :nth-child(even)
+    :nth-child(3n)          - каждый третий
+    a:not(.red)             - все а которые не класса red
+    ::after                 - html после
+    ::before                - html перед
+    :in-range               - <input type="number" min="10" max="20" value="15">
+    :checked
+
+динамика:
+    .red:hover
+    .red:focus
+    .red:active             - кликнутый мышкою
+    .red:link               - не кликнутая ссылка
+    .red:visited            - посещенные ссылки
+
+по атрибутам:
+[attr]                      <div attr>                   With attribute attr
+[attr='val']                <div attr="val">             Where attribute attr has value val
+[attr~='val']               <div attr="val val2 val3">   Where val appears in the whitespace-separated list of attr
+[attr^='val']               <div attr="val1 val2">       Where attr's value begins with val
+[attr$='val']               <div attr="sth aval">        Where the attr's value ends with val
+[attr*='val']               <div attr="somevalhere">     Where attr contains val anywhere
+[attr|='val']               <div attr="val-sth etc">     Where attr's value is exactly val, or starts with val and immediately followed by
+[attr='val' i]              <div attr="val">             Where attr has value val, ignoring val's letter casing
+
+
+div[data-color] { color: red; }
+<div data-color="red">This will be red</div>
+<div data-color="green">This will be red</div>
+<div data-background="red">This will NOT be red</div>
+
+div[data-color="red"] { color: red; }
+<div data-color="red">This will be red</div>
+<div data-color="green">This will NOT be red</div>
+<div data-color="blue">This will NOT be red</div>
+
+[class*="foo"] { color: red; }
+<div class="foo-123">This will be red</div>
+<div class="foo123">This will be red</div>
+<div class="bar123foo">This will be red</div>
+<div class="barfooo123">This will be red</div>
+<div class="barfo0">This will NOT be red</div>
+
+[class~="color-red"] { color: red; }
+<div class="color-red foo-bar the-div">This will be red</div>
+<div class="color-blue foo-bar the-div">This will NOT be red</div>
+
+[class^="foo-"] { color: red; }
+<div class="foo-123">This will be red</div>
+<div class="foo-234">This will be red</div>
+<div class="bar-123">This will NOT be red</div>
+
+[class$="file"] { color: red; }
+<div class="foobar-file">This will be red</div>
+<div class="foobar-file">This will be red</div>
+<div class="foobar-input">This will NOT be red</div>
+
+[lang|="EN"] { color: red; }
+<div lang="EN-us">This will be red</div>
+<div lang="EN-gb">This will be red</div>
+<div lang="PT-pt">This will NOT be red</div>
+
+[lang="EN" i] { color: red; }
+<div lang="EN">This will be red</div>
+<div lang="en">This will be red</div>
+<div lang="PT">This will NOT be red</div>

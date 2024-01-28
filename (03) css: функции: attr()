@@ -1,0 +1,26 @@
+
+
+css функции: attr:
+------------------
+
+<style>
+div
+{
+ background: attr(data-background);     -- не работает
+}
+
+div[data-background='green']
+{
+background-color:green;                 -- правильно вот так
+}
+
+div[data-mark]::before,
+div[data-mark]::after {
+ content: attr(data-mark);              -- работает
+}
+
+</style>
+
+<div data-mark="some text" data-background="green"
+style='height:100px; width:100px;'>
+</div>

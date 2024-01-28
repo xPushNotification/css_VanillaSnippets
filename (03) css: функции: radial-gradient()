@@ -1,0 +1,7 @@
+
+
+css radial-gradient:
+--------------------
+
+radial-gradient(red, orange, yellow) /*A gradient coming out from the middle of the
+gradient, red at the center, then orange, until it is finally yellow at the edges*/
